@@ -1,0 +1,30 @@
+<div id="imgur-search">
+  <div id="form-field-container">
+    <mat-form-field appearance="outline" id="form-field">
+      <mat-label>Search Imgur</mat-label>
+      <input matInput placeholder="Search" [(ngModel)]="searchData">
+    </mat-form-field>
+    <div class="example-button-container" id="search-button">
+      <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="searchPhotos()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div id="photo-search-result" class="container" *ngIf="dataState=='1'">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile *ngFor="let pic of photos">
+        <mat-card class="example-card">
+          <mat-card-title-group>
+            <mat-card-title>{{pic.title}}</mat-card-title>
+            <mat-card-subtitle>Photographer: {{pic.account_url}}</mat-card-subtitle>
+            <img mat-card-xl-image [src]="pic.images.link" >
+          </mat-card-title-group>
+          <mat-card-content>
+            {{pic.title}}
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+.idea
+/UI/.idea/
+/UI/.vscode/
+/UI/node_modules/
+/server/.idea/
+/server/node_modules/

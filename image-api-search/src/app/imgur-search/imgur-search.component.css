@@ -1,0 +1,27 @@
+#imgur-search {
+  padding: 20px;
+}
+
+#form-field {
+  width: 50%;
+}
+
+#form-field-container {
+  display: flex;
+}
+
+#search-button {
+  margin-left: 5%;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+/*#photo-search-result {*/
+/*  display: flex;*/
+/*}*/
+
+#card-photo {
+  margin-right: 15px;
+}
