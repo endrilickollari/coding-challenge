@@ -4,3 +4,6 @@
 /UI/node_modules/
 /server/.idea/
 /server/node_modules/
+/Api/.idea
+/Api/node_modules
+/Api/src/public

@@ -10,7 +10,6 @@ export class PexelsSearchComponent implements OnInit {
   searchData: any;
   dataState = '0';
   photos = ([] as any[]);
-  longText = 'aaaaaaa';
   constructor(private pexelsPhotoSearchService: ImageSearchService) { }
 
   searchPhotos() {
